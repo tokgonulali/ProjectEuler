@@ -7,7 +7,7 @@ public class Problem13 {
 	public static void main(String[] args){        
         long start = System.currentTimeMillis();
 
-//	    array of BigIntegers to contain all one-hundred 50-digit numbers
+        // array of BigIntegers to contain all one-hundred 50-digit numbers
         BigInteger[] bigArray = new BigInteger[100];    
         
         // initialize each element in the array with its 50-digit number

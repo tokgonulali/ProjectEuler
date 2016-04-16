@@ -10,6 +10,7 @@ public class Problem13 {
         // array of BigIntegers to contain all one-hundred 50-digit numbers
         BigInteger[] bigArray = new BigInteger[100];    
         
+        //test at home
         // initialize each element in the array with its 50-digit number
         bigArray[0]  = new BigInteger("37107287533902102798797998220837590246510135740250");
         bigArray[1]  = new BigInteger("46376937677490009712648124896970078050417018260538");

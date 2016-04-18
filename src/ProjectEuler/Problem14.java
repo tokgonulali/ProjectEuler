@@ -5,7 +5,6 @@ public class Problem14 {
 		int chain;
 		int maxChain = 0;
 		int maxChainNum = 2;
-		int a = 0;
 		for (int i = 2; i < 1000000; i++){
 			chain = maxChain(i);			
 			if(maxChain < chain){

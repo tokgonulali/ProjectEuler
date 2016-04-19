@@ -2,20 +2,26 @@ package ProjectEuler;
 
 public class Problem14 {
 	public static void main(String[] args){
-		int chain;
-		int maxChain = 0;
-		int maxChainNum = 2;
-		for (int i = 2; i < 1000000; i++){
-			chain = maxChain(i);			
-			if(maxChain < chain){
-				maxChain = chain;
-				maxChainNum = i;
-			}
+		int number = 1000000;		 
+		long maxChain = 0;
+		long maxChainNum = 0;
+		long sequence;
+		 
+		for (int i = 2; i <= number; i++) {
+		    int chain = 1;
+		    sequence = i;
+		    
+		    chain = maxChain(sequence);
+		 
+		    if (chain > maxChain) {
+		    	maxChain = chain;
+		    	maxChainNum = i;
+		    }
 		}
 		System.out.println(maxChainNum);
 	}
 	
-	public static int maxChain(int number){
+	public static int maxChain(long number){
 		int chain = 0;
 		while (number != 1){
 			if (number % 2 == 0){
